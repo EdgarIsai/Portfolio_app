@@ -9,7 +9,9 @@
             <a href="{% url 'blog_category' category.name %}">{{ category.name }}</a>&nbsp;
         {% endfor %}
     </small>
+    <div class="text-justify">
     <p>{{ post.body | linebreaks }}</p>
+    </div>
     <h3>Leave a comment:</h3>
     <form action="/blog/{{ post.pk }}/" method="post">
         {% csrf_token %}
@@ -27,8 +29,10 @@
             On {{ comment.created_on.date }}&nbsp;
             <b>{{ comment.author }}</b> Wrote:
         </p>
+        <div class="text-justify">
         <p>{{ comment.body }}</p>
         <hr>
+        </div>
     {% endfor %}
     </div>
 {% endblock %}
