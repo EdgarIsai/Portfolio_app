@@ -25,7 +25,7 @@ SECRET_KEY = 'ewyinla3%=2%)v#^((j3ccpvdwus=xt)&9y7#owavc+nli9i5!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
 
 
 # Application definition
