@@ -1,3 +1,105 @@
-.navbar {
-    margin-bottom: 5vh;
+#home {
+    width: 100vw;
+    height: 93vh;
+    background: linear-gradient(rgba(255, 255, 255, .1) 80%,
+                                rgba(224, 224, 224, 1) 90%),
+                                url(../img/apple-croped.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+#open-navbar {
+    position: fixed;
+    left: 4%;
+    top: 4%;
+}
+
+#namePic {
+    width: 100%;
+    padding-top: 11%;
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.ppic {
+    width: 27%;
+    margin-top: 7vw !important;
+    margin: auto;
+    margin-bottom: 4%;
+    display: block;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+h1 {
+    font-family: Ropa Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#slogan {
+    font-family: Zilla Slab;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    top: 73%;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 5%;
+    margin: auto;
+    left: 40%
+}
+
+.btn {
+    font-family: Share Tech Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    width: 45%;
+}
+
+.titles {
+    font-family: Gemunu Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.card-text {
+    font-family: Unna;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.clear-fix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#portfolioTitle {
+    font-size: 3em;
+}
+#portfolio {
+    margin-top: -1px!important;
+    background: rgb(224, 224, 224);
+    height: 100vh;
+    .main-content {
+        width: 80%;
+        padding: 10vh 0 0 0;
+        margin: auto;
+
+        h2 {
+            text-align: center;
+        }
+
+        .card {
+            width: auto!important;
+            margin: 4vh auto;
+        }
+    }
 }

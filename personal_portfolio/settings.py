@@ -25,7 +25,8 @@ SECRET_KEY = 'ewyinla3%=2%)v#^((j3ccpvdwus=xt)&9y7#owavc+nli9i5!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
+# ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'blog',
-    'home',
 ]
 
 MIDDLEWARE = [

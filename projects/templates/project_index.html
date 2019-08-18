@@ -2,7 +2,34 @@
 {% load static %}
 {% block page_content %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %} ">
-<h1>Projects</h1>
+
+<div id="home">
+    <img src="{% static 'img/open-navbar.svg' %}" alt="Open Navvar" id="open-navbar">
+    <div id="namePic">
+        <img src="{% static 'img/square-ppic.jpg' %}" class="ppic">
+        <h1>Edgar Salgado</h1>
+        <h3 id="slogan">Front End Web Developer | 
+passionate pythonista</h3>
+        <a href="#portfolio"><img src="{% static 'img/VectorDownArrow.svg' %}" class="arrow"></a>
+    </div>
+</div>
+<div id="portfolio" class="clear-fix">
+ <div class="main-content">
+    <h2 class="titles" id="portfolioTitle">Portfolio</h2>
+
+    <div class="card">
+        <img src="{% static 'img/square-ppic.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title titles">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary">View</a>
+            <a href="#" class="btn btn-secondary right" style="float:right">Code</a>
+        </div>
+    </div>
+
+ </div>
+</div>
+{% comment %} 
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
@@ -19,5 +46,5 @@
         </div>
     </div>
 {% endfor %}
-</div>
+</div> {% endcomment %}
 {% endblock %}
