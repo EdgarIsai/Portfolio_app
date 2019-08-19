@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+hr {
+  background: #bcbcbc;
+}
+
 #home {
   width: 100%;
   height: 93vh;
@@ -154,6 +158,7 @@ h1 {
 
 #portfolioTitle {
   font-size: 3em;
+  padding-top: 4vh;
 }
 
 #portfolio {
@@ -164,7 +169,7 @@ h1 {
 
 #portfolio .main-content {
   width: 80%;
-  padding: 10vh 0 0 0;
+  padding: 0;
   margin: auto;
 }
 
@@ -176,6 +181,55 @@ h1 {
   width: auto !important;
   margin: 4vh auto;
   position: inherit;
+  -webkit-box-shadow: -1px 2px 4px black;
+          box-shadow: -1px 2px 4px black;
+}
+
+#portfolio .main-content .card-img-top {
+  border-radius: .75rem .75rem 0 0;
+}
+
+#technologies {
+  margin-top: 3vh;
+  padding-top: 4vh;
+  font-size: 3em;
+  margin-bottom: 5vh;
+  height: 10vh;
+}
+
+.skillset {
+  width: 80vw;
+  height: 8vw;
+  display: inline-block;
+  margin-bottom: 3vh;
+}
+
+.skillset h3 {
+  display: inline-block;
+  font-size: 2em;
+  font-family: Share Tech Mono;
+}
+
+.skillset span {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 3%;
+  border-radius: 100%;
+  background: #6c757d;
+  display: inline-block;
+  float: right;
+  margin-top: 2%;
+  -webkit-box-shadow: 1px 1px 2px #494f54;
+          box-shadow: 1px 1px 2px #494f54;
+}
+
+.skillset .half {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #6c757d), color-stop(51%, #fff));
+  background: linear-gradient(to right, #6c757d 50%, #fff 51%);
+}
+
+.skillset .empty {
+  background: #fff;
 }
 
 .aboutMe {
@@ -236,6 +290,36 @@ footer p {
   line-height: 6vh;
   margin-bottom: 0 !important;
   font-family: Unna;
+}
+
+label {
+  margin-left: 1%;
+}
+
+#emailaddress {
+  line-height: 1.4em;
+  margin-top: 2%;
+}
+
+#emailHelp {
+  margin-left: 1%;
+}
+
+.modal button {
+  margin: auto;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: auto;
+}
+
+#closeModal {
+  float: left;
+  margin: auto auto auto 0;
+}
+
+#sendForm {
+  margin: 0;
 }
 
 @media (max-width: 650px) {
