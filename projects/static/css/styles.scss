@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #home {
-    width: 100vw;
+    width: 100%;
     height: 93vh;
     background: linear-gradient(rgba(255, 255, 255, .1) 80%,
                                 rgba(224, 224, 224, 1) 90%),
@@ -7,11 +11,56 @@
     background-size: 100% auto;
 }
 
-#open-navbar {
-    position: fixed;
-    left: 4%;
-    top: 4%;
+.openNavbar {
+    width: 40vw!important;
+    left: 0!important;
+
+    #NavbarIcon {
+        left: 44%!important;
+    }
 }
+
+.closeNavbar {
+    transition: 0.5s;
+    position: fixed;
+    left: -41%;
+    top: 0;
+    background: linear-gradient(to right,rgba(102, 102, 102, 1), rgba(102, 102, 102, .7));
+    width: 40vw;
+    height: 100vh;
+    z-index: 1;
+
+    #NavbarIcon {
+        transition: 0.5s;
+        position: fixed;
+        left: 4%;
+        top: 4%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+            padding: 3vw;
+            box-shadow: -2px 1px 5px black;
+            font-family: Unna;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+
 
 #namePic {
     width: 100%;
@@ -28,6 +77,7 @@
     display: block;
     border: 1px solid black;
     padding: 2px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -62,9 +112,9 @@ h1 {
 }
 
 .titles {
-    font-family: Gemunu Libre;
+    font-family: "Patua One";
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2em;
 }
 
@@ -76,11 +126,17 @@ h1 {
     font-family: Unna;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .card-body {
     border-radius: 0 0 10px 10px;
+    .tech {
+        display: inline-block;
+        font-size: .8em;
+        width: auto;
+        padding: 6px;
+    }
 }
 
 .card-img-top {
@@ -135,6 +191,7 @@ h1 {
     display: block;
     border: 2px solid #666;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .unna {
@@ -170,14 +227,15 @@ footer {
 
     p {
         text-align: center;
-        font-size: 1em;
-        line-height: 11vw;
+        font-size: 1.2em;
+        line-height: 6vh;
         margin-bottom: 0!important;
+        font-family: Unna;
     }
 }
 
 @media (max-width: 650px) {
     .unna {
-        font-size: 1.15em;
+        font-size: 1.3em;
     }
 }

@@ -1,15 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #home {
-  width: 100vw;
+  width: 100%;
   height: 93vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(255, 255, 255, 0.1)), color-stop(90%, #e0e0e0)), url(../img/apple-croped.jpg) no-repeat;
   background: linear-gradient(rgba(255, 255, 255, 0.1) 80%, #e0e0e0 90%), url(../img/apple-croped.jpg) no-repeat;
   background-size: 100% auto;
 }
 
-#open-navbar {
+.openNavbar {
+  width: 40vw !important;
+  left: 0 !important;
+}
+
+.openNavbar #NavbarIcon {
+  left: 44% !important;
+}
+
+.closeNavbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  left: -41%;
+  top: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#666666), to(rgba(102, 102, 102, 0.7)));
+  background: linear-gradient(to right, #666666, rgba(102, 102, 102, 0.7));
+  width: 40vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.closeNavbar #NavbarIcon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   position: fixed;
   left: 4%;
   top: 4%;
+}
+
+.closeNavbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.closeNavbar ul li {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 3vw;
+  -webkit-box-shadow: -2px 1px 5px black;
+          box-shadow: -2px 1px 5px black;
+  font-family: Unna;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 5px;
+}
+
+.closeNavbar ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 #namePic {
@@ -27,6 +78,7 @@
   display: block;
   border: 1px solid black;
   padding: 2px;
+  border-radius: 5px;
 }
 
 h1 {
@@ -61,9 +113,9 @@ h1 {
 }
 
 .titles {
-  font-family: Gemunu Libre;
+  font-family: "Patua One";
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 2em;
 }
 
@@ -75,11 +127,18 @@ h1 {
   font-family: Unna;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .card-body {
   border-radius: 0 0 10px 10px;
+}
+
+.card-body .tech {
+  display: inline-block;
+  font-size: .8em;
+  width: auto;
+  padding: 6px;
 }
 
 .card-img-top {
@@ -136,6 +195,7 @@ h1 {
   display: block;
   border: 2px solid #666;
   padding: 5px;
+  border-radius: 5px;
 }
 
 .unna {
@@ -172,14 +232,15 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 1em;
-  line-height: 11vw;
+  font-size: 1.2em;
+  line-height: 6vh;
   margin-bottom: 0 !important;
+  font-family: Unna;
 }
 
 @media (max-width: 650px) {
   .unna {
-    font-size: 1.15em;
+    font-size: 1.3em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
