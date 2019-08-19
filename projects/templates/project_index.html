@@ -16,18 +16,32 @@ passionate pythonista</h3>
 <div id="portfolio" class="clear-fix">
  <div class="main-content">
     <h2 class="titles" id="portfolioTitle">Portfolio</h2>
-
+    {% for project in projects %}
     <div class="card">
-        <img src="{% static 'img/square-ppic.jpg' %}" class="card-img-top" alt="...">
+        <img src="{{ project.image.url }}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title titles">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title titles">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
             <a href="#" class="btn btn-secondary">View</a>
             <a href="#" class="btn btn-secondary right" style="float:right">Code</a>
         </div>
     </div>
-
+    {% endfor %}
+    <hr>
+    <div class="aboutMe clear-fix">
+        <h2 class="titles" id="aboutme">About Me</h2>
+        <img src="{% static 'img/square-ppic.jpg' %}" id="aboutMePic">
+        <p class="unna">I'm a developer who's always in the path of learning,
+         challenging myself in order to bring the best quality project 
+         in the shortest amout of time I possibly can without sacrificing quality.
+        </p>
+        <p class="unnaBold">Have a project in mind and need a hand to make it happen?</p>
+        <a href="#" class="btn btn-secondary" id="contact">Contact Me</a>
+    </div>
  </div>
+ <footer>
+    <p>&copy All rights reserved</p>
+ </footer>
 </div>
 {% comment %} 
 <div class="row">

@@ -68,11 +68,24 @@ h1 {
     font-size: 2em;
 }
 
+.card {
+    background: #c4c4c4;
+}
+
 .card-text {
     font-family: Unna;
     font-style: normal;
     font-weight: normal;
     font-size: 1.2em;
+}
+
+.card-body {
+    border-radius: 0 0 10px 10px;
+}
+
+.card-img-top {
+    padding: 2%;
+    min-height: 30vh;
 }
 
 .clear-fix {
@@ -100,6 +113,71 @@ h1 {
         .card {
             width: auto!important;
             margin: 4vh auto;
+            position: inherit;
         }
+    }
+}
+
+.aboutMe {
+    height: 98vh;
+}
+
+#aboutme {
+    margin-top: 2vh;
+    font-size: 3em;
+}
+
+#aboutMePic {
+    width: 45%;
+    margin-top: 5vh !important;
+    margin: auto;
+    margin-bottom: 4vw;
+    display: block;
+    border: 2px solid #666;
+    padding: 5px;
+}
+
+.unna {
+    margin-top: 5vh;
+    font-family: Unna;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1.3em
+}
+
+.unnaBold {
+    margin-top: 5vh;
+    font-family: Unna;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 5vh;
+}
+
+#contact {
+    display: block;
+    margin: 0 auto 10vh auto;
+}
+
+footer {
+    position: relative;
+    bottom: calc(100vh - 95vh);
+    height: 6vh;
+    background: #2323;
+    margin-bottom: -5vh;
+
+    p {
+        text-align: center;
+        font-size: 1em;
+        line-height: 11vw;
+        margin-bottom: 0!important;
+    }
+}
+
+@media (max-width: 650px) {
+    .unna {
+        font-size: 1.15em;
     }
 }
