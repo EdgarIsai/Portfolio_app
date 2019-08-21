@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block page_content %}
+
 <link rel="stylesheet" href="{% static 'css/styles.css' %} ">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Unna" />
 <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -19,6 +20,16 @@
             <li id="contactMe">Contact Me</li>
         </ul>
     </div>
+
+    <div class="desktopBar" id="fix-nav-bar">
+        <ul>
+            <li id="hm"><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#technologieshr">Technologies</a></li>
+            <li><a href="#aboutmehr">About Me</a></li>
+            <li id="contactMe">Contact Me</li>
+        </ul>
+    </div>
     
     <div id="namePic">
         <img src="{% static 'img/square-ppic.jpg' %}" class="ppic">
@@ -31,112 +42,206 @@
 <div id="portfolio" class="clear-fix">
  <div class="main-content">
     <h2 class="titles" id="portfolioTitle">Portfolio</h2>
-    {% for project in projects %}
-    <div class="card">
-        <img src="{{ project.image.url }}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title titles">{{ project.title }}</h5>
-            {% for tech in project.technology.split %}
-            <h6 class="btn btn-dark tech">{{ tech }}</h6>
-            {% endfor %}
-            <p class="card-text">{{ project.description }}</p>
-            <a href="#" class="btn btn-secondary">View</a>
-            <a href="#" class="btn btn-secondary right" style="float:right">Code</a>
+    <div id="cards">
+      {% for project in projects %}
+      <div class="card">
+          <img src="{{ project.image.url }}" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title titles">{{ project.title }}</h5>
+              {% for tech in project.technology.split %}
+              <h6 class="btn btn-dark tech">{{ tech }}</h6>
+              {% endfor %}
+              <p class="card-text">{{ project.description }}</p>
+              <a href="#" class="btn btn-secondary">View</a>
+              <a href="#" class="btn btn-secondary right" style="float:right">Code</a>
+          </div>
+      </div>
+      {% endfor %}
+      <hr>
+    </div>
+    <div class="wrapper">
+      <span id="technologieshr" class="anchor" ></span>
+      <h2 class="titles" id="technologies">Technologies</h2>
+      <div id="mobile-skillset">
+        <div class="skillset">
+            <h3>Git</h3>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </div>
-    {% endfor %}
-    <hr>
-    <h2 class="titles" id="technologies">Technologies</h2>
+
+        <div class="skillset">
+            <h3>SASS</h3>
+            <span class="half"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>Python</h3>
+            <span class="half"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>Django</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>HTML5</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>CSS3</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>JS</h3>
+            <span class="empty"></span>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>C</h3>
+            <span class="empty"></span>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+
+
+
+      <div id="desktop-skillset">
+        <div class="skillset">
+            <h3>Git</h3>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <div class="skillset">
+            <h3>HTML5</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>Python</h3>
+            <span class="half"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>CSS3</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>SASS</h3>
+            <span class="half"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>JS</h3>
+            <span class="empty"></span>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>Django</h3>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="skillset">
+            <h3>C</h3>
+            <span class="empty"></span>
+            <span class="empty"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
     
-    <div class="skillset">
-        <h3>Git</h3>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+      <hr>
+      <div class="certificates clear-fix">
+        <h2 class="titles" id="certificate">Certificates</h2>
+        <div class="certificate">
+          <p>HarvardX PH526x: Using Python for Research</p>
+          <button class="btn btn-secondary"><a href="https://courses.edx.org/certificates/5d256b22f107486aa552687e23a9f47e" target="_blank">View</a></button>
+        </div>     
+      </div>
+      <hr>
 
-    <div class="skillset">
-        <h3>Python</h3>
-        <span class="half"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+      <span id="aboutmehr" class="anchor" ></span>
+      <div class="aboutMe">
+          <h2 class="titles" id="aboutme">About Me</h2>
+          <img src="{% static 'img/square-ppic.jpg' %}" id="aboutMePic">
+          <p class="unna">I'm a developer who's always in the path of learning,
+          challenging myself in order to bring the best quality project 
+          in the shortest amout of time I possibly can without sacrificing quality.
+          </p>
+          <p class="unnaBold">Have a project in mind and need a hand to make it happen?</p>
+          <a href="#" class="btn btn-secondary" id="contact" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+      </div>
+  </div>
 
-    <div class="skillset">
-        <h3>SASS</h3>
-        <span class="half"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="skillset">
-        <h3>Django</h3>
-        <span class="empty"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="skillset">
-        <h3>HTML5</h3>
-        <span class="empty"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="skillset">
-        <h3>CSS3</h3>
-        <span class="empty"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="skillset">
-        <h3>Javascript</h3>
-        <span class="empty"></span>
-        <span class="empty"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="skillset">
-        <h3>C</h3>
-        <span class="empty"></span>
-        <span class="empty"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-  
-    <hr>
-    <div class="aboutMe clear-fix">
-        <h2 class="titles" id="aboutme">About Me</h2>
-        <img src="{% static 'img/square-ppic.jpg' %}" id="aboutMePic">
-        <p class="unna">I'm a developer who's always in the path of learning,
-         challenging myself in order to bring the best quality project 
-         in the shortest amout of time I possibly can without sacrificing quality.
-        </p>
-        <p class="unnaBold">Have a project in mind and need a hand to make it happen?</p>
-        <a href="#" class="btn btn-secondary" id="contact" data-toggle="modal" data-target="#contactModal">Contact Me</a>
-    </div>
+  <footer>
+      <p>&copy All rights reserved</p>
+  </footer>
  </div>
-
- <footer>
-    <p>&copy All rights reserved</p>
- </footer>
 </div>
+
 
 
 <!-- Contact modal -->
