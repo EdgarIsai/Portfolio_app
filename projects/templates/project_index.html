@@ -13,10 +13,10 @@
     <div class="closeNavbar" id="side-bar">
         <img src="{% static 'img/open-navbar.svg' %}" alt="Open Navvar" id="NavbarIcon">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#aboutme">About Me</a></li>
+            <a href="#"><li>Home</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#technologies"><li>Technologies</li></a>
+            <a href="#aboutme"><li>About Me</li></a>
             <li id="contactMe">Contact Me</li>
         </ul>
     </div>
@@ -36,7 +36,7 @@
         <h1>Edgar Salgado</h1>
         <h3 id="slogan">Front End Web Developer | 
                         passionate pythonista</h3>
-        <a href="#portfolio"><img src="{% static 'img/VectorDownArrow.svg' %}" class="arrow"></a>
+        <div class="f"><a href="#portfolio"><img src="{% static 'img/VectorDownArrow.svg' %}" class="arrow"></a></div>
     </div>
 </div>
 <div id="portfolio" class="clear-fix">
@@ -218,7 +218,7 @@
         <h2 class="titles" id="certificate">Certificates</h2>
         <div class="certificate">
           <p>HarvardX PH526x: Using Python for Research</p>
-          <button class="btn btn-secondary"><a href="https://courses.edx.org/certificates/5d256b22f107486aa552687e23a9f47e" target="_blank">View</a></button>
+          <a href="https://courses.edx.org/certificates/5d256b22f107486aa552687e23a9f47e" target="_blank"><button class="btn btn-secondary">View</button></a>
         </div>     
       </div>
       <hr>

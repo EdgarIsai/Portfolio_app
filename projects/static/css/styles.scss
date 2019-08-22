@@ -1,3 +1,9 @@
+// Bootstrap fixes
+  .modal-open{
+    padding:0 !important;
+    overflow-y: auto;
+   }
+// Begining of the file
 html {
     scroll-behavior: smooth;
 }
@@ -57,7 +63,13 @@ hr {
         padding: 0;
         margin: 0;
 
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
         li {
+            text-decoration: none;
             color: white;
             font-size: 1.5em;
             text-align: center;
@@ -66,12 +78,11 @@ hr {
             font-family: Unna;
             text-shadow: 1px 1px 2px black;
             margin-bottom: 5px;
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
         }
+    }
+
+    #contactMe {
+        cursor: pointer;
     }
 }
 
@@ -411,7 +422,7 @@ margin-top: 2%;
     }
 
     .btn {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #technologies {
@@ -508,6 +519,7 @@ margin-top: 2%;
     .desktopBar {
         position: fixed;
         top: 0;
+        z-index: 10;
         width: 100%;
         display: block;
         height: 10vh;

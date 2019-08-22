@@ -1,3 +1,8 @@
+.modal-open {
+  padding: 0 !important;
+  overflow-y: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +66,13 @@ hr {
   margin: 0;
 }
 
+.closeNavbar ul a {
+  text-decoration: none;
+  color: white;
+}
+
 .closeNavbar ul li {
+  text-decoration: none;
   color: white;
   font-size: 1.5em;
   text-align: center;
@@ -73,9 +84,8 @@ hr {
   margin-bottom: 5px;
 }
 
-.closeNavbar ul li a {
-  text-decoration: none;
-  color: white;
+.closeNavbar #contactMe {
+  cursor: pointer;
 }
 
 #namePic {
@@ -399,7 +409,7 @@ label {
     font-size: 1.2em;
   }
   .btn {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #technologies {
     font-size: 3.5em;
@@ -474,6 +484,7 @@ label {
   .desktopBar {
     position: fixed;
     top: 0;
+    z-index: 10;
     width: 100%;
     display: block;
     height: 10vh;
