@@ -42,6 +42,7 @@ hr {
     width: 40vw;
     height: 100vh;
     z-index: 1;
+    overflow: hidden;
 
     #NavbarIcon {
         transition: 0.5s;
@@ -266,7 +267,7 @@ h1 {
 }
 
 .aboutMe {
-    height: 94vh;
+    height: 90vh;
 }
 
 #aboutme {
@@ -275,7 +276,7 @@ h1 {
 }
 
 #aboutMePic {
-    width: 45%;
+    width: 17vh;
     margin-top: 5vh !important;
     margin: auto;
     margin-bottom: 4vw;
@@ -360,9 +361,6 @@ margin-top: 2%;
 }
 
 @media (min-width: 360px) {
-    .aboutMe {
-        height: 99vh;
-    }
 
     .certificates button {
         margin-left: 5%;
@@ -462,74 +460,46 @@ margin-top: 2%;
         position: initial;
         top: auto;
     }
+
+    .closeNavbar {
+        ul {
+            li {
+                font-size: 2em;
+            }
+        }
+    }
 }
 
-@media (min-width: 1024px) {
+@media(min-width: 970px) {
+
+    #home {
+        background: linear-gradient(rgba(255, 255, 255, .1) 60%,
+        rgba(224, 224, 224, 1) 90%),
+        url(../img/apple-clean-pad.jpg) no-repeat; 
+        background-size: 100% auto;
+    }
+
     .ppic {
-        margin-bottom: 0;
+        width: 15%;
+        margin-top: 2vw !important;
     }
 
-    h1 {
-        font-size: 4em;
-        margin-top: 2%;
+    #aboutMePic {
+        width: 23%;
     }
 
-    #slogan {
-        position: initial;
-        top: auto;
-        font-size: 2.4em;
-    }
-
-    .arrow {
-        left: 44%;
-        width: 12%;
-    }
-    
-    .certificates {
-
-        #certificate {
-            font-size: 3em;
-        }
-
-        button {
-            vertical-align: initial;
-        }
-    }
-
-    .unna {
-        font-size: 4.1vw;
-    }
-
-    .unnaBold {
-        font-size: 4.8vw;
-    }
-
-    .btn {
-        font-size: 5vw;
-    }    
-    
-    footer p {
-        font-size: 3vw;
+    .aboutMe {
+        height: 90vh;
     }
 }
 
-@media (min-width: 1920px) {
-
+@media (min-width: 1280px) {
     .anchor{
         display: block;
         height: 8vh; /*same height as header*/
         margin-top: -10vh; /*same height as header*/
         visibility: hidden;
       }
-
-    #home {
-        width: 100%;
-        height: 93vh;
-        background: linear-gradient(rgba(255, 255, 255, .1) 60%,
-                                    rgba(224, 224, 224, 1) 90%),
-                                    url(../img/apple-clean-containers.jpg) no-repeat;
-        background-size: 100% auto;
-    }
 
     .closeNavbar {
         display: none;
@@ -555,6 +525,8 @@ margin-top: 2%;
                 display: inline-block;
                 color: white;
                 margin-right: 2vw;
+                cursor: pointer;
+
                 a {
                     text-decoration: none;
                     color: white;
@@ -563,31 +535,31 @@ margin-top: 2%;
         }
     }
 
-    #namePic {
-        .ppic {
-            width: 7%;
-            margin-top: 0vw !important;
-        }
+    #home {
+        width: 100%;
+        height: 93vh;
+        background: linear-gradient(rgba(255, 255, 255, .1) 60%,
+                                        rgba(224, 224, 224, 1) 90%),
+                                        url(../img/apple-clean-containers.jpg) no-repeat;
+            background-size: 100% auto;
+    }
 
-        h1 {
-            margin-top: 0;
-        }
+    .ppic {
+        width: 12vh;
+        margin-top: 1vw !important;
+        margin-bottom: 2vh;
+    }
 
-        #slogan {
-            font-size: 1.6em;
-            margin-left: -1vw;
-        }
-
-        .arrow {
-            left: 46%;
-            width: 6%;
-        }
-    } 
+    #slogan {
+        position: absolute;
+        bottom: 20%;
+    }
 
     #portfolioTitle {
         padding-top: 13vh;
         margin-bottom: 5vh;
     }
+
 
     #portfolio {
 
@@ -606,12 +578,19 @@ margin-top: 2%;
                 width: 100%;
             }
 
+            .card-body {
+                .btn-secondary {
+                    width: 47%;
+                }
+            }
+
             .btn {
                 font-size: 1vw;
             }
 
             .btn-secondary {
                 font-size: 1.5em;
+                width: fit-content;
             }
 
             .card-text {
@@ -640,6 +619,10 @@ margin-top: 2%;
         margin-top: 11vh;
     }
 
+    .titles {
+        font-size: 4vh;
+    }
+
     .skillset {
         margin-left: 3vw;
         width: 35vw;
@@ -652,18 +635,26 @@ margin-top: 2%;
         }
     }
 
+    .certificates {
+        margin-bottom: 4vh;
+        margin-top: 5vh;
+    }
+
     .certificate {
-        width: 60%;
+        width: 80%;
         margin: auto;
 
         p {
-            margin: 2% 10% 2% 10%;
+            margin: 2% 30px 2% 13%;
+            width: auto;
         }
 
         .btn-secondary {
             margin: auto;
+            vertical-align: middle;
         }
     }
+
 
     #aboutMePic {
         width: 20%;
@@ -683,7 +674,7 @@ margin-top: 2%;
     }
 
     .unnaBold {
-        font-size: 2.8vw;
+        font-size: 3vh;
     }
 
     .btn-secondary {
@@ -696,6 +687,7 @@ margin-top: 2%;
 
     #contact {
         width: 20%;
+        margin: auto;
     }
 
     footer {
@@ -706,4 +698,43 @@ margin-top: 2%;
             font-size: 1vw;
         }
     }
+    
+}
+
+@media (min-width: 1440px) {
+
+    #namePic {
+        .ppic {
+            width: 7%;
+            margin-top: 0vw !important;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        #slogan {
+            font-size: 1.6em;
+            margin-left: -1vw;
+            position: initial;
+            margin-top: 3vh;
+        }
+
+        .arrow {
+            left: 46%;
+            width: 6%;
+        }
+    }
+    
+    .certificate {
+        p {
+            margin: 2% 30px 2% 20%;
+        }
+    }
+
+    .unnaBold {
+        font-size: 4vh;
+    }
+
+
 }

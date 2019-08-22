@@ -16,4 +16,9 @@ $(document).ready(function () {
         console.log("asdf");
         $("#contactModal").modal("show");
     });
+
+    $("#contactMeD").click(function () {
+        console.log("asdf");
+        $("#contactModal").modal("show");
+    });
 });
