@@ -352,6 +352,13 @@ margin-top: 2%;
     margin-left: 1%;
 }
 
+.modal-footer {
+    .btn-secondary {
+        width: 49%!important;
+
+    }
+}
+
 .modal {
     button {
         margin: auto;
@@ -711,6 +718,12 @@ margin-top: 2%;
         }
     }
     
+
+    .modal-footer {
+        .btn-secondary {
+            font-size: 1vw!important;   
+        }
+    }
 }
 
 @media (min-width: 1440px) {

@@ -354,6 +354,10 @@ label {
   margin-left: 1%;
 }
 
+.modal-footer .btn-secondary {
+  width: 49% !important;
+}
+
 .modal button {
   margin: auto;
 }
@@ -633,6 +637,9 @@ label {
   }
   footer p {
     font-size: 1vw;
+  }
+  .modal-footer .btn-secondary {
+    font-size: 1vw !important;
   }
 }
 

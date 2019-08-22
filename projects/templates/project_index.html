@@ -36,7 +36,7 @@
         <h1>Edgar Salgado</h1>
         <h3 id="slogan">Front End Web Developer | 
                         passionate pythonista</h3>
-        <div class="f"><a href="#portfolio"><img src="{% static 'img/VectorDownArrow.svg' %}" class="arrow"></a></div>
+        <a href="#portfolio"><img src="{% static 'img/VectorDownArrow.svg' %}" class="arrow"></a>
     </div>
 </div>
 <div id="portfolio" class="clear-fix">
@@ -244,6 +244,8 @@
 
 
 
+
+
 <!-- Contact modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -255,7 +257,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="post">
+            {% csrf_token %}
             <div class="row">
               <div class="col">
                 <label for="firstName">First Name</label>
@@ -275,12 +278,13 @@
 
           <label for="contatMessage">Message</label>
           <textarea type="text" class="form-control" placeholder="Message" id="contatMessage"></textarea>
-        </form>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
-        <button type="button" class="btn btn-success" id="sendForm">Send form</button>
+        <input type="submit" class="btn btn-success" id="sendForm" value="submit">
       </div>
+      </form>
     </div>
   </div>
 </div>
