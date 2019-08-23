@@ -52,8 +52,8 @@
               <h6 class="btn btn-dark tech">{{ tech }}</h6>
               {% endfor %}
               <p class="card-text">{{ project.description }}</p>
-              <a href="#" class="btn btn-secondary">View</a>
-              <a href="#" class="btn btn-secondary right" style="float:right">Code</a>
+              <a href="{{ project.view_url }}" class="btn btn-secondary" target="_blank">View</a>
+              <a href="{{ project.code_url }}" class="btn btn-secondary right" style="float:right" target="_blank">Code</a>
           </div>
       </div>
       {% endfor %}
@@ -262,22 +262,22 @@
             <div class="row">
               <div class="col">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" placeholder="First name" id="firstName" name="first_name">
+                <input type="text" class="form-control" placeholder="First name" id="firstName" name="first_name" required>
               </div>
               <div class="col">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last name" id="lastName" name="last_name">
+                <input type="text" class="form-control" placeholder="Last name" id="lastName" name="last_name" required>
               </div>
             </div>
 
             <div class="form-group">
               <label for="InputEmail1" id="emailaddress">Email address</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="mail">
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="mail" required>
               <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
             </div>
 
           <label for="contatMessage">Message</label>
-          <textarea type="text" class="form-control" placeholder="Message" id="contatMessage" name="message"></textarea>
+          <textarea type="text" class="form-control" placeholder="Message" id="contatMessage" name="message" required></textarea>
         
       </div>
       <div class="modal-footer">

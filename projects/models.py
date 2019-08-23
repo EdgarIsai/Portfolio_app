@@ -8,3 +8,5 @@ class Project(models.Model):
     image = models.ImageField(upload_to="project_image",
                               blank=False,
                               default="../static/img/square-ppic.jpg")
+    view_url = models.CharField(max_length=20, default="")
+    code_url = models.CharField(max_length=200, default="")
