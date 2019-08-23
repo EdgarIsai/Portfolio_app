@@ -127,3 +127,10 @@ STATIC_ROOT = '/home/EdgarIsai/Portfolio_app/personal_portfolio/static'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'personal_portfolio/media')
+
+# Mail-settings
+PORT = 465
+SMTP_SERVER = "smtp.gmail.com"
+SENDER_MAIL = "edgarisai.contact@gmail.com"
+RECEIVER_MAIL = "edgarisaidev@gmail.com"
+PASSWORD = "Lo7QvNm14045"
