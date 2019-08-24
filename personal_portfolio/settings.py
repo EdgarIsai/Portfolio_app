@@ -26,13 +26,13 @@ SECRET_KEY = 'ewyinla3%=2%)v#^((j3ccpvdwus=xt)&9y7#owavc+nli9i5!'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
-ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin', 
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
