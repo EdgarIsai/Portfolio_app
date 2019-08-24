@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+    {% block css %}
+      {# jQuery#}
+      <script src="{% static 'hostels/JS/jquery-3.4.1.slim.min.js' %}"></script>
+
+      <link rel="stylesheet" type="text/css" href="{% static 'hostels/css/help.css'%}" />
+      <link rel="stylesheet" type="text/css" href="{% static 'hostels/css/normalize.css'%}" />
+      <script src="{% static 'hostels/JS/main.js' %}"></script>
+      <script src="{% static 'hostels/JS/details.js' %}"></script>
+      <title>{{ hostel.name }}</title>
+    {% endblock %}
+</head>
+{% block page_content %}
+<body>
+<div class="page">
+  <div class="wrapper">
+  <header class="main-header" >
+
+    <div class="full">
+      <div id="sidebar">
+        <div class="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+          <ul>
+            <li>
+              <a href="/hostels">Home</a>
+            </li>
+            <li>
+              <a href="#" class="register">Register</a>
+            </li>
+            <li>
+              <a href="/hostels/help">Help</a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+
+    <div id="header-wrapper">
+    <a href="/hostels"><img src="{% static 'hostels/img/logo.png' %}" id="logo">
+    <h1 class="title">HoselExample.com</h1></a>
+
+      <div class="search-bar">
+        {% csrf_token %}
+         <form class="form-inline my-2 my-lg-0" autocomplete="off">
+          <input
+              class="form-control mr-sm-2"
+              type="search" placeholder="Hostel name..."
+              aria-label="Search"
+              name="search"
+              value="{{ search_term }}">
+          <button class="btn btn-outline-success my-2 my-sm-0 btn" type="submit">Search</button>
+        </form>
+      </div>
+
+    </div>
+
+       <div id="nav" class="desktop">
+
+          <ul>
+            <li>
+              <a href="/hostels">Home</a>
+            </li>
+            <li>
+              <a href="#" class="register">Register</a>
+            </li>
+            <li>
+              <a href="/hostels/help">Help</a>
+            </li>
+          </ul>
+
+      </div>
+
+    </header>
+  </div>
+
+<div class="header-margin"></div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Updates?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 id="h6modal">Type your e-mail to get updates</h6>
+        <div class="register-bar" id="regModal">
+          {% csrf_token %}
+           <form class="form-inline my-2 my-lg-0">
+            <input
+                class="form-control mr-sm-2"
+                type="email" placeholder="example@domain.com"
+                aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn" type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Contact Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="row">
+              <div class="col">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" placeholder="First name" id="firstName">
+              </div>
+              <div class="col">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name" id="lastName">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="InputEmail1" id="emailaddress">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+          <label for="contatMessage">Message</label>
+          <textarea type="text" class="form-control" placeholder="Message" id="contatMessage"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Send form</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wr">
+<div class="main-content">
+  <!-- Form-->
+  <h2>Contact us</h2>
+  <hr>
+  <form>
+      <div class="row">
+        <div class="col">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" placeholder="First name" id="firstName">
+        </div>
+        <div class="col">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" placeholder="Last name" id="lastName">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="InputEmail1" id="emailaddress">Email address</label>
+        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+    <label for="contatMessage">Message</label>
+    <textarea type="text" class="form-control" placeholder="Message" id="contatMessage"></textarea>
+    <button class="btn btn-outline-success my-2 my-sm-0 btn" type="submit" id="contact">Contact</button>
+  </form>
+</div>
+  </div>
+
+
+</div>
+  <div id="footer">
+    <footer>
+      <h6 class="align-middle">Want to get updates?</h6>
+      <div class="register-bar">
+          {% csrf_token %}
+           <form class="form-inline my-2 my-lg-0">
+            <input
+                class="form-control mr-sm-2"
+                type="email" placeholder="example@domain.com"
+                aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn" type="submit">Register</button>
+          </form>
+      </div>
+    </footer>
+  </div>
+</body>
+{% endblock %}
