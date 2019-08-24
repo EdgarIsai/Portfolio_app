@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/form.css' %}">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" lang="en" charset="UTF-8">
+    <title>East Sun Great Roll</title>
+  </head>
+  <body>
+    <header>
+      <div class="background-line">
+        <h1>East Sun Great Roll</h1>
+        <nav>
+          <ul>
+            <li class="col-2"><a href="/restaurant">Home</a></li>
+            <li class="col-2"><a href="/restaurant/menu">Menu</a></li>
+            <li class="col-2"><a href="/restaurant/discount">On discount</a></li>
+            <li class="col-2"><a href="/restaurant/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h2><span class="badge badge-secondary">Contact</span></h2>
+
+    <form class="form">
+      <label for="full-name">Full Name: </label><br>
+      <input type="text" name="full-name" id="full-name" required><br>
+      <label for="email">Email: </label><br>
+      <input type="email" name="email" id="email" required><br>
+      <label for="description">How can we help you?: </label><br>
+      <textarea name="Text1" cols="40" rows="5" id="description" required></textarea><br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+
+  </body>
+</html>

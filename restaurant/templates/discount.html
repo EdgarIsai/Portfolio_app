@@ -1,0 +1,54 @@
+{% load static %}
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" lang="en" charset="UTF-8">
+    <title>East Sun Great Roll</title>
+  </head>
+  <body>
+    <header>
+      <div class="background-line">
+        <h1>East Sun Great Roll</h1>
+        <nav>
+          <ul>
+            <li class="col-2"><a href="/restaurant">Home</a></li>
+            <li class="col-2"><a href="/restaurant/menu">Menu</a></li>
+            <li class="col-2"><a href="/restaurant/discount">On discount</a></li>
+            <li class="col-2"><a href="/restaurant/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h2><span class="badge badge-secondary">On discount</span></h2>
+
+    <div class="main-content">
+      <div class="card" style="width: 18rem;display:inline-block;">
+        <img src="{% static 'project0/img/rice-bowl.jpg' %}" class="card-img-top" alt="..." style="height: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Rice Bowl</h5>
+          <p class="card-text">Rice bowl seasoned with vegetables</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;display:inline-block;">
+        <img src="{% static 'project0/img/noodles%20and%20rice.jpg' %}" class="card-img-top" alt="..." style="height: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Noodles and Rice</h5>
+          <p class="card-text">A bowl of noodles accompanied with pork meat and rice</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;display:inline-block;">
+        <img src="{% static 'project0/img/Shrimp-noodle-soup.jpg' %}" class="card-img-top" alt="..." style="height: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Shrimp Soup</h5>
+          <p class="card-text">Shrimp soup seasoned with spice and noodles</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

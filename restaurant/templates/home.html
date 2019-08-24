@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link type="text/css" rel="stylesheet" href="{% static 'css/index.css' %}">
+      <meta  name="viewport" content="width=device-width, initial-scale=1.0" lang="en" charset="UTF-8">
+      <title>East Sun Great Roll</title>
+    </head>
+    <body>
+
+      <div>
+        <div id="line-background">
+          <h1 class="col-12">East Sun Great Roll</h1>
+          <nav>
+            <ul>
+              <li class="col-2"><a href="/restaurant">Home</a></li>
+              <li class="col-2"><a href="/restaurant/menu">Menu</a></li>
+              <li class="col-2"><a href="/restaurant/discount">On discount</a></li>
+              <li class="col-2"><a href="/restaurant/contact">Contact</a></li>
+            </ul>
+          </nav>
+          <img id="menu" src="{% static 'project0/img/Menu.png' %}" alt="Menu Card">
+        </div>
+      </div>
+
+      <footer>
+        <table  class="schedule">
+          <tr>
+            <th>Monday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>12:00–23:00</td>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td><span class="badge badge-pill badge-light">Closed</span></td>
+          </tr>
+        </table>
+        <img id="payment" src="{% static 'project0/img/payment-methods.png' %}" alt="Payment Methods">
+      </footer>
+    </body>
+</html>

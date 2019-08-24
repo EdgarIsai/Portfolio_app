@@ -26,7 +26,7 @@ SECRET_KEY = 'ewyinla3%=2%)v#^((j3ccpvdwus=xt)&9y7#owavc+nli9i5!'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['edgarisai.pythonanywhere.com']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'projects',
     'blog',
     'hostels',
+    'restaurant',
 ]
 
 MIDDLEWARE = [

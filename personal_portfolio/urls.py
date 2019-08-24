@@ -23,5 +23,6 @@ urlpatterns = [
     path("", include("projects.urls")),
     path("blog/", include('blog.urls')),
     path("hostels/", include("hostels.urls", namespace="hostel")),
+    path("restaurant/", include("restaurant.urls"))
     # path('', include('home.urls')),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

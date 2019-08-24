@@ -1,0 +1,103 @@
+$font-stack:    Helvetica, sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  background: linear-gradient(to right, rgba(36, 36, 36, .9), transparent 90%),
+  rgba(36, 36, 36, .5) url("../project0/img/index.jpg") no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 25%;
+  margin-bottom: .2em;
+  font-size: 100px;
+  font-family: $font-stack;
+  color: #dedede;
+  text-shadow: 2px 2px 5px #1f1f1f;
+  text-align: center;
+}
+
+nav {
+  ul {
+
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 20px 0;
+      color: white;
+      text-shadow: 2px 2px 2px #000;
+      font-size: 2.5em;
+      a {
+        color: rgba(255, 255, 255, .8);
+      }
+    }
+
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+}
+
+td {
+  padding: 0 0 2px 10px;
+}
+
+
+
+%base-table {
+  color: rgba(255, 255, 255, .8);
+}
+
+.schedule {
+  @extend %base-table;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 10px 10px;
+  position: absolute;
+}
+
+.badge-light {
+  opacity: .8;
+}
+
+#line-background {
+  width: 250%;
+  margin-left: -50%;
+  padding: 0 100% 20px 50%;
+  background: linear-gradient(to left, rgba(36, 36, 36, 1), transparent 70%);
+}
+
+#menu {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#payment {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  margin: 10px;
+}
+
+#schedule {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  margin: 0 0 10px 10px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
