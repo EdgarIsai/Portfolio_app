@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 4px 4px 10px #1f1f1f;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 36, 36, 0.9)), color-stop(90%, transparent)), rgba(36, 36, 36, 0.5) url("../project0/img/index.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(36, 36, 36, 0.9), transparent 90%), rgba(36, 36, 36, 0.5) url("../project0/img/index.jpg") no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Helvetica, sans-serif;
+}
+
+nav ul {
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px 0;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 1.5em;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.background-line {
+  padding: 15px 0;
+  background: -webkit-gradient(linear, right top, left top, from(#151515), color-stop(400%, transparent));
+  background: linear-gradient(to left, #151515, transparent 400%);
+  margin-bottom: 15px;
+}
+
+.main-content {
+  width: 56%;
+  height: 50%;
+  margin: auto;
+  padding-left: 1.5%;
+}
+
+.card {
+  margin: 20px 10px 10px 0;
+}
+
+.badge {
+  background-color: rgba(42, 46, 49, 0.8);
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=menu.css.map */

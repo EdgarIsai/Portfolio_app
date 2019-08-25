@@ -1,0 +1,671 @@
+.modal-open {
+  padding: 0 !important;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  background: #bcbcbc;
+}
+
+#desktop-skillset {
+  display: none;
+  margin-bottom: 8vh;
+}
+
+.desktopBar {
+  display: none;
+}
+
+#home {
+  width: 100%;
+  height: 93vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.1)), color-stop(90%, #e0e0e0)), url(../img/apple-croped.jpg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 60%, #e0e0e0 90%), url(../img/apple-croped.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.openNavbar {
+  width: 40vw !important;
+  left: 0 !important;
+}
+
+.openNavbar #NavbarIcon {
+  left: 44% !important;
+}
+
+.closeNavbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  left: -41%;
+  top: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#666666), to(rgba(102, 102, 102, 0.7)));
+  background: linear-gradient(to right, #666666, rgba(102, 102, 102, 0.7));
+  width: 40vw;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.closeNavbar #NavbarIcon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  left: 4%;
+  top: 4%;
+  width: 8%;
+}
+
+.closeNavbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.closeNavbar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.closeNavbar ul li {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 3vw;
+  -webkit-box-shadow: -2px 1px 5px black;
+          box-shadow: -2px 1px 5px black;
+  font-family: Unna;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 5px;
+}
+
+.closeNavbar #contactMe {
+  cursor: pointer;
+}
+
+#namePic {
+  width: 100%;
+  padding-top: 11%;
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.ppic {
+  width: 27%;
+  margin-top: 7vw !important;
+  margin: auto;
+  margin-bottom: 4%;
+  display: block;
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+#slogan {
+  font-family: Zilla Slab;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  top: 73%;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  margin: auto;
+  left: 40%;
+}
+
+.btn {
+  font-family: Share Tech Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3em;
+  width: 45%;
+}
+
+.titles {
+  font-family: "Patua One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.card {
+  background: #c4c4c4;
+}
+
+.card-text {
+  font-family: Unna;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+.card-body {
+  border-radius: 0 0 10px 10px;
+}
+
+.card-body .tech {
+  display: inline-block;
+  font-size: .8em;
+  width: auto;
+  padding: 6px;
+}
+
+.card-img-top {
+  padding: 2%;
+  min-height: 30vh;
+}
+
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#portfolioTitle {
+  font-size: 3em;
+  padding-top: 4vh;
+}
+
+#portfolio {
+  margin-top: -1px !important;
+  background: #e0e0e0;
+  height: 100vh;
+}
+
+#portfolio .main-content {
+  width: 80%;
+  padding: 0;
+  margin: auto;
+}
+
+#portfolio .main-content h2 {
+  text-align: center;
+}
+
+#portfolio .main-content .card {
+  width: auto !important;
+  margin: 4vh auto;
+  position: inherit;
+  -webkit-box-shadow: -1px 2px 4px black;
+          box-shadow: -1px 2px 4px black;
+}
+
+#portfolio .main-content .card-img-top {
+  border-radius: .75rem .75rem 0 0;
+}
+
+#technologies {
+  margin-top: 3vh;
+  padding-top: 4vh;
+  font-size: 3em;
+  margin-bottom: 5vh;
+  height: 10vh;
+}
+
+.skillset {
+  width: 80vw;
+  height: 8vw;
+  display: inline-block;
+  margin-bottom: 3vh;
+}
+
+.skillset h3 {
+  display: inline-block;
+  font-size: 2em;
+  font-family: Share Tech Mono;
+}
+
+.skillset span {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 3%;
+  border-radius: 100%;
+  background: #6c757d;
+  display: inline-block;
+  float: right;
+  margin-top: 2%;
+  -webkit-box-shadow: 1px 1px 2px #494f54;
+          box-shadow: 1px 1px 2px #494f54;
+}
+
+.skillset .half {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #6c757d), color-stop(51%, #fff));
+  background: linear-gradient(to right, #6c757d 50%, #fff 51%);
+}
+
+.skillset .empty {
+  background: #fff;
+}
+
+.certificates #certificate {
+  font-size: 2em;
+}
+
+.certificates p {
+  margin-top: 3%;
+  width: 70%;
+  font-family: Unna;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+.certificates button {
+  vertical-align: 50%;
+  width: auto;
+  font-size: 120%;
+  margin-left: 6%;
+}
+
+.certificates button a {
+  text-decoration: none;
+  color: white;
+}
+
+.aboutMe {
+  height: 90vh;
+}
+
+#aboutme {
+  margin-top: 2vh;
+  font-size: 3em;
+}
+
+#aboutMePic {
+  width: 17vh;
+  margin-top: 5vh !important;
+  margin: auto;
+  margin-bottom: 4vw;
+  display: block;
+  border: 2px solid #666;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.unna {
+  margin-top: 5vh;
+  font-family: Unna;
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+.unnaBold {
+  margin-top: 5vh;
+  font-family: Unna;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 5vh;
+}
+
+#contact {
+  display: block;
+  margin: 0 auto 10vh auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  height: 6vh;
+  background: #2323;
+  margin-left: -10vw;
+  width: 100vw;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 6vh;
+  margin-bottom: 0 !important;
+  font-family: Unna;
+}
+
+label {
+  margin-left: 1%;
+}
+
+#emailaddress {
+  line-height: 1.4em;
+  margin-top: 2%;
+}
+
+#emailHelp {
+  margin-left: 1%;
+}
+
+.modal-footer .btn-secondary {
+  width: 49% !important;
+}
+
+.modal button {
+  margin: auto;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: auto;
+}
+
+#closeModal {
+  float: left;
+  margin: auto auto auto 0;
+}
+
+#sendForm {
+  margin: 0;
+}
+
+@media (min-width: 360px) {
+  .certificates button {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .unna {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 761px) {
+  #home {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(255, 255, 255, 0.1)), color-stop(90%, #e0e0e0)), url(../img/apple-croped.jpg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 80%, #e0e0e0 90%), url(../img/apple-croped.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+  #slogan {
+    position: initial;
+    top: auto;
+  }
+  .arrow {
+    left: 45%;
+  }
+  #portfolioTitle {
+    font-size: 4em;
+  }
+  .titles {
+    font-size: 3em;
+  }
+  .card-text {
+    font-size: 1.9em;
+  }
+  .card-body .tech {
+    font-size: 1.2em;
+  }
+  .btn {
+    font-size: 1.5em;
+  }
+  #technologies {
+    font-size: 3.5em;
+  }
+  .skillset h3 {
+    font-size: 3em;
+  }
+  .skillset span {
+    margin-top: 0;
+  }
+  .certificates {
+    width: 100%;
+  }
+  .certificates p {
+    font-size: 1.9em;
+  }
+  .certificates button {
+    font-size: 1.9em;
+    margin-left: 15%;
+  }
+  #aboutme {
+    font-size: 4em;
+  }
+  .unna {
+    font-size: 1.7em;
+  }
+  .unnaBold {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 810px) {
+  #slogan {
+    position: initial;
+    top: auto;
+  }
+  .closeNavbar ul li {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 970px) {
+  #home {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.1)), color-stop(90%, #e0e0e0)), url(../img/apple-clean-pad.jpg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 60%, #e0e0e0 90%), url(../img/apple-clean-pad.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+  .ppic {
+    width: 15%;
+    margin-top: 2vw !important;
+  }
+  #aboutMePic {
+    width: 23%;
+  }
+  .aboutMe {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .anchor {
+    display: block;
+    height: 8vh;
+    /*same height as header*/
+    margin-top: -10vh;
+    /*same height as header*/
+    visibility: hidden;
+  }
+  .closeNavbar {
+    display: none;
+  }
+  .desktopBar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    height: 10vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #414141), to(#2a2a2a));
+    background: linear-gradient(#414141 60%, #2a2a2a 100%);
+  }
+  .desktopBar ul {
+    line-height: 10vh;
+    font-size: 1.1vw;
+  }
+  .desktopBar ul #hm {
+    font-size: 1.5vw;
+  }
+  .desktopBar ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 2vw;
+    cursor: pointer;
+  }
+  .desktopBar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  #home {
+    width: 100%;
+    height: 93vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.1)), color-stop(90%, #e0e0e0)), url(../img/apple-clean-containers.jpg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 60%, #e0e0e0 90%), url(../img/apple-clean-containers.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+  .ppic {
+    width: 12vh;
+    margin-top: 1vw !important;
+    margin-bottom: 2vh;
+  }
+  #slogan {
+    position: absolute;
+    bottom: 20%;
+  }
+  #portfolioTitle {
+    padding-top: 13vh;
+    margin-bottom: 5vh;
+  }
+  #portfolio .main-content {
+    width: 100%;
+  }
+  #portfolio .main-content .card {
+    width: 25vw !important;
+    margin: 0vw 1vw 2vw 1vw;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #portfolio .main-content .card-img-top {
+    width: 100%;
+  }
+  #portfolio .main-content .card-body .btn-secondary {
+    width: 47%;
+  }
+  #portfolio .main-content .btn {
+    font-size: 1vw;
+  }
+  #portfolio .main-content .btn-secondary {
+    font-size: 1.5em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #portfolio .main-content .card-text {
+    font-size: 1.4em;
+    margin: 1vw auto;
+  }
+  #cards {
+    width: 83vw;
+    margin: auto;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  #mobile-skillset {
+    display: none;
+  }
+  #desktop-skillset {
+    display: block;
+    margin-top: 11vh;
+  }
+  .titles {
+    font-size: 4vh;
+  }
+  .skillset {
+    margin-left: 3vw;
+    width: 35vw;
+    height: 4vw;
+    margin-bottom: 0;
+  }
+  .skillset span {
+    width: 3vw;
+    height: 3vw;
+  }
+  .certificates {
+    margin-bottom: 4vh;
+    margin-top: 5vh;
+  }
+  .certificate {
+    width: 80%;
+    margin: auto;
+  }
+  .certificate p {
+    margin: 2% 30px 2% 13%;
+    width: auto;
+  }
+  .certificate .btn-secondary {
+    margin: auto;
+    vertical-align: middle;
+  }
+  #aboutMePic {
+    width: 20%;
+    margin-top: 3vh !important;
+    margin-bottom: 2vw;
+  }
+  .unna {
+    font-size: 1.5vw;
+    margin-top: 2vh;
+  }
+  .aboutMe {
+    height: 84vh;
+    width: 60%;
+    margin: auto;
+  }
+  .unnaBold {
+    font-size: 3vh;
+  }
+  .btn-secondary {
+    font-size: 1vw;
+  }
+  .btn-success {
+    font-size: 1vw;
+  }
+  #contact {
+    width: 20%;
+    margin: auto;
+  }
+  footer {
+    width: inherit;
+    margin-left: 0;
+  }
+  footer p {
+    font-size: 1vw;
+  }
+  .modal-footer .btn-secondary {
+    font-size: 1vw !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  #namePic .ppic {
+    width: 7%;
+    margin-top: 0vw !important;
+  }
+  #namePic h1 {
+    margin-top: 0;
+  }
+  #namePic #slogan {
+    font-size: 1.6em;
+    margin-left: -1vw;
+    position: initial;
+    margin-top: 3vh;
+  }
+  #namePic .arrow {
+    left: 46%;
+    width: 6%;
+  }
+  .certificate p {
+    margin: 2% 30px 2% 20%;
+  }
+  .unnaBold {
+    font-size: 4vh;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

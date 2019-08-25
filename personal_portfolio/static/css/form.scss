@@ -1,0 +1,92 @@
+$font-stack:    Helvetica, sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: rgba(255, 255, 255, .9);
+  font-family: $font-stack;
+  text-align: center;
+  text-shadow: 4px 4px 10px #1f1f1f;
+}
+
+body {
+  background: linear-gradient(to right, rgba(36, 36, 36, .9), transparent 90%),
+  rgba(36, 36, 36, .5) url("../project0/img/index.jpg") no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, .9);
+  font-family: $font-stack;
+}
+
+nav {
+  ul {
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 20px 0;
+      color: white;
+      text-shadow: 2px 2px 2px #000;
+      font-size: 1.5em;
+      a {
+        color: rgba(255, 255, 255, .8);
+      }
+      padding-inline-start: 0;
+    }
+
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.background-line {
+  padding: 15px 0;
+  background: linear-gradient(to left, rgba(21, 21, 21, 1), transparent 400%);
+  margin-bottom: 15px;
+}
+
+.main-content {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  padding-left: 1.5%;
+}
+
+.badge {
+  background-color: rgba(42, 46, 49, .8);
+  font-size: 1.2em;
+}
+input{
+  width: 300px;
+}
+form {
+  margin: 50px auto;
+  width: 300px;
+  font-size: 20px;
+}
+
+.form {
+  color: white;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+#submit {
+  border-radius: 3px;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
